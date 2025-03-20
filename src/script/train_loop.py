@@ -22,4 +22,8 @@ if __name__ == "__main__":
 nohup python -u -m src.script.train_loop > log/train_log.txt 2>&1 &
 kill -9 pid
 tail -f log/train_log.txt
+
+
+python3 -m venv venv
+source venv/bin/activate
 '''
