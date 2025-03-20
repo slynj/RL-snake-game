@@ -7,20 +7,20 @@ import os
 
 # from src.model.train import env, model
 from src.model.SnakeGame import SnakeGame
-
+from env.env import MODEL_PATH, LOG_PATH
 
 # python -m src.run.game_gif 
 
 
 env = SnakeGame()
-env = Monitor(env, "../../log")
+env = Monitor(env, LOG_PATH)
 
-model_path = "../../model/best_model.zip"
-if os.path.exists(model_path):
+# model_path = os.path.abspath("../../model/best_model.zip")
+if os.path.exists(MODEL_PATH):
     print("Loading model...")
-    model = PPO.load(model_path, env=env)
+    model = PPO.load(MODEL_PATH, env=env)
 else:
-    raise FileNotFoundError(f"Model not found at {model_path}. Train the model first.")
+    raise FileNotFoundError(f"Model not found at {MODEL_PATH}. Train the model first.")
 
 
 obs, _ = env.reset()
