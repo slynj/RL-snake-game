@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
 
 '''
-nohup python -m src.script.train_loop > log/train_log.txt 2>&1 &
-pkill -f train_loop
+nohup python -u -m src.script.train_loop > log/train_log.txt 2>&1 &
+kill -9 pid
+tail -f log/train_log.txt
 '''
