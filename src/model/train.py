@@ -23,7 +23,7 @@ def train():
     env = Monitor(env, log_dir)
 
     # cb fn -> periodically evaluate the model and save the best version
-    eval_cb = EvalCallback(env, best_model_save_path='../../best_model',
+    eval_cb = EvalCallback(env, best_model_save_path=os.path.abspath('../../model'),
                         log_path='../../log',
                         eval_freq=5000,
                         deterministic=False,
@@ -42,18 +42,17 @@ def train():
     # Multi Input Policy since we have 1+ states as an 'input'
     model = PPO('MultiInputPolicy', env, **PPO_model_args)
 
-    model_path = "../../best_model/best_model.zip"
+    model_path = os.path.abspath("../../model/model.zip")
 
     if os.path.exists(model_path):
         print("Loading pretrained model...", flush=True)
         model.set_parameters(model_path)
     
-    # model.learn(6000000, callback=eval_cb)
-    model.learn(160000, callback=eval_cb)
+    model.learn(6000000, callback=eval_cb)
+    # model.learn(160000, callback=eval_cb)
+    model.save(model_path)
     
     sys.stdout.flush() 
 
-if (__name__ == "__main__") or (__name__ == "__script__"):
-    print("MAIN!", flush=True)
-
+if __name__ == "__main__":
     train()

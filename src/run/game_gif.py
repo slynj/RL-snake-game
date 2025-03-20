@@ -15,7 +15,7 @@ from src.model.SnakeGame import SnakeGame
 env = SnakeGame()
 env = Monitor(env, "../../log")
 
-model_path = "../../best_model/best_model.zip"
+model_path = "../../model/best_model.zip"
 if os.path.exists(model_path):
     print("Loading model...")
     model = PPO.load(model_path, env=env)
