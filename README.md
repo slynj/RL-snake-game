@@ -11,6 +11,8 @@ note: hyperparameters were adjusted throughout the process for learning stabilit
 | --- | --- | --- | --- |
 | <img src="img/snake_game_1.gif" width="150"> | <img src="img/snake_game_2.gif" width="150"> | <img src="img/snake_game_3.gif" width="150"> | <img src="img/snake_game_4.gif" width="150"> |
 
+<br>
+
 ## Installation
 
 Clone the repo & install the requirements:
@@ -20,6 +22,8 @@ git clone https://github.com/slynj/RL-snake-game.git
 cd RL-snake-game
 pip install -r requirements.txt
 ```
+
+<br>
 
 ## Render Mode
 
@@ -35,6 +39,8 @@ Render mode is set default to `rgb_array` for graphics & to save the `.gif` file
 | <img src="img/image1.png" width="450"> | <img src="img/image.png" width="350"> |
 
 
+<br>
+
 ## State & Action Space
 
 The game is based on a 10x10 grid. 3 features are passed as a state:
@@ -49,6 +55,8 @@ Possible actions for the agent:
 - `STRAIGHT` [1]
 - `RIGHT` [2]
 
+<br>
+
 ## Reward System
 
 | **Action** | **Reward** |
@@ -57,6 +65,8 @@ Possible actions for the agent:
 | Moving Towards Food | +1 |
 | Moving Away from Food | -1 |
 | Hitting the Wall / Snake Body | -20 |
+
+<br>
 
 ## Logs / Best Model
 
