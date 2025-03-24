@@ -2,12 +2,14 @@
 
 AI agent for a snake game using reinforcement learning with [Proximal Policy Optimization (PPO)](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html#ppo). The environment is built using [Gymnasium](https://gymnasium.farama.org/), and the model is trained using [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/).
 
+<br>
+
 ## Training Progress Over Time
 note: hyperparameters were adjusted throughout the process for learning stability and performance. 
 <br>
 | 1 hour | 5 hours | 10 hours | 24 hours |
 | --- | --- | --- | --- |
-| <img src="img/snake_game_1.gif" width="450"> | <img src="img/snake_game_2.gif" width="450"> | <img src="img/snake_game_3.gif" width="450"> | <img src="img/snake_game_4.gif" width="450"> |
+| <img src="img/snake_game_1.gif" width="200"> | <img src="img/snake_game_2.gif" width="200"> | <img src="img/snake_game_3.gif" width="200"> | <img src="img/snake_game_4.gif" width="200"> |
 
 ## Installation
 
