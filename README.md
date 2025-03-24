@@ -9,7 +9,7 @@ note: hyperparameters were adjusted throughout the process for learning stabilit
 <br>
 | 1 hour | 5 hours | 10 hours | 24 hours |
 | --- | --- | --- | --- |
-| <img src="img/snake_game_1.gif" width="200"> | <img src="img/snake_game_2.gif" width="200"> | <img src="img/snake_game_3.gif" width="200"> | <img src="img/snake_game_4.gif" width="200"> |
+| <img src="img/snake_game_1.gif" width="150"> | <img src="img/snake_game_2.gif" width="150"> | <img src="img/snake_game_3.gif" width="150"> | <img src="img/snake_game_4.gif" width="150"> |
 
 ## Installation
 
