@@ -36,7 +36,7 @@ Render mode is set default to `rgb_array` for graphics & to save the `.gif` file
 
 | **`rgb_array`** | **`console`** |
 | --- | --- |
-| <img src="img/image1.png" width="450"> | <img src="img/image.png" width="350"> |
+| <img src="img/image1.png" width="225"> | <img src="img/image.png" width="175"> |
 
 
 <br>
